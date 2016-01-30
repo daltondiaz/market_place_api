@@ -1,0 +1,19 @@
+
+Tutorial stop in the begin: http://apionrails.icalialabs.com/book/chapter_one#sec-initializing_project
+
+
+In this project I follow a book tutorial on : 
+
+http://apionrails.icalialabs.com/book/
+
+So here I anoted the parts more importants for me. So if you want more details read the book. 
+
+For configure the enviorement follow the steps on this link : http://apionrails.icalialabs.com/book/chapter_one#uid25
+
+
+
+
+
+
+
+
