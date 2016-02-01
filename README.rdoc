@@ -1,6 +1,5 @@
 
-Tutorial stop in the begin: http://apionrails.icalialabs.com/book/chapter_two#sec-routes_constraints_namespaces 
-in the part Listing 2.6:
+Tutorial stop in the begin: http://apionrails.icalialabs.com/book/chapter_three
 
 
 In this project I follow a book tutorial on : 
@@ -25,5 +24,66 @@ RESTful APIs must follow at least 3 simple guidelines:
 
 
 
+In this tutorial is used **devise**.
+
+	Devise is a flexible authentication solution for Rails based on Warden. It:
+
+    Is Rack based;
+    Is a complete MVC solution based on Rails engines;
+    Allows you to have multiple models signed in at the same time;
+    Is based on a modularity concept: use only what you really need.
+
+Se more details: https://github.com/plataformatec/devise
+
+How to use in begin:
+
+Example:
+
+First install
+``` rb
+$ rails g devise:install
+ create  config/initializers/devise.rb
+      create  config/locales/devise.en.yml
+===============================================================================
+.
+.
+.
+ ```
+
+ Next:
+
+``` rb
+$ rails g devise User
+      invoke  active_record
+      create    db/migrate/20140622003340_devise_create_users.rb
+      create    app/models/user.rb
+      invoke    rspec
+      create      spec/models/user_spec.rb
+      invoke      factory_girl
+      create        spec/factories/users.rb
+      insert    app/models/user.rb
+       route  devise_for :users
+ ```
+
+From now every time we create a model, the generator will also create a factory file for that model, see above. This will help us to easily create test users and facilitate our tests writing.
+
+
+````rb
+FactoryGirl.define do
+  factory :user do
+  end
+end
+```
+
+Next we migrate the database and prepare the test database.
+
+```sh
+$ rake db:migrate
+```
+After:
+
+```sh
+$ rake db:test:prepare
+```
 
 
