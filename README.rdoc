@@ -13,7 +13,7 @@ For configure the enviorement follow the steps on this link : http://apionrails.
 
 #create image 
 
-In short terms we have the **user** who will be able to place many **orders**, upload multiple **products** which can have many **images** or **comments** from another users on the app.
+In short terms we have the *user* who will be able to place many *orders*, upload multiple *products* which can have many *images* or *comments* from another users on the app.
 
 
 RESTful APIs must follow at least 3 simple guidelines:
@@ -23,8 +23,9 @@ RESTful APIs must follow at least 3 simple guidelines:
  3) Follow the standard HTTP Methods such as GET, POST, PUT, DELETE. 
 
 
+## Devise
 
-In this tutorial is used **devise**.
+In this tutorial is used *devise*.
 
 	Devise is a flexible authentication solution for Rails based on Warden. It:
 
@@ -40,6 +41,7 @@ How to use in begin:
 Example:
 
 First install
+
 ``` rb
 $ rails g devise:install
  create  config/initializers/devise.rb
@@ -48,7 +50,7 @@ $ rails g devise:install
 .
 .
 .
- ```
+```
 
  Next:
 
@@ -68,7 +70,7 @@ $ rails g devise User
 From now every time we create a model, the generator will also create a factory file for that model, see above. This will help us to easily create test users and facilitate our tests writing.
 
 
-````rb
+``` rb
 FactoryGirl.define do
   factory :user do
   end
@@ -77,12 +79,13 @@ end
 
 Next we migrate the database and prepare the test database.
 
-```sh
+``` sh
 $ rake db:migrate
 ```
+
 After:
 
-```sh
+``` sh
 $ rake db:test:prepare
 ```
 
