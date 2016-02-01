@@ -1,5 +1,6 @@
 
-Tutorial stop in the begin: http://apionrails.icalialabs.com/book/chapter_one#sec-initializing_project
+Tutorial stop in the begin: http://apionrails.icalialabs.com/book/chapter_two#sec-routes_constraints_namespaces 
+in the part Listing 2.6:
 
 
 In this project I follow a book tutorial on : 
@@ -11,7 +12,16 @@ So here I anoted the parts more importants for me. So if you want more details r
 For configure the enviorement follow the steps on this link : http://apionrails.icalialabs.com/book/chapter_one#uid25
 
 
+#create image 
 
+In short terms we have the **user** who will be able to place many **orders**, upload multiple **products** which can have many **images** or **comments** from another users on the app.
+
+
+RESTful APIs must follow at least 3 simple guidelines:
+
+ 1) A base URI, such as http://example.com/resources/.
+ 2) An Internet media type to represent the data, it is commonly JSON and is commonly set through headers exchange.
+ 3) Follow the standard HTTP Methods such as GET, POST, PUT, DELETE. 
 
 
 
