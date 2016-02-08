@@ -1,5 +1,5 @@
 
-Tutorial stop in the begin: http://apionrails.icalialabs.com/book/chapter_three
+Tutorial stop in the begin: http://apionrails.icalialabs.com/book/chapter_three#uid81
 
 
 In this project I follow a book tutorial on : 
