@@ -1,5 +1,5 @@
 
-Tutorial stop in the begin: http://apionrails.icalialabs.com/book/chapter_three#uid81
+Tutorial stop in the Listing 3.7: http://apionrails.icalialabs.com/book/chapter_three#cid13
 
 
 In this project I follow a book tutorial on : 
@@ -90,3 +90,14 @@ $ rake db:test:prepare
 ```
 
 
+# Rspec
+
+http://rspec.info/
+
+## Shoulda Matchers
+
+https://github.com/thoughtbot/shoulda-matchers
+
+# Factory Girl
+
+https://github.com/thoughtbot/factory_girl_rails
