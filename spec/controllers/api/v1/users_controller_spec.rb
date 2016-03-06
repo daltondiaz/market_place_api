@@ -14,8 +14,7 @@ describe Api::V1::UsersController do
       expect(user_response[:email]).to eql @user.email
     end
 
-    # I didn't find the reason of respond_with doesnt exist
-    #it { should respond_with 200 }
+    it { should respond_with 200 }
   end
 
   context "When is not created" do
