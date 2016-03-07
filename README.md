@@ -101,3 +101,20 @@ https://github.com/thoughtbot/shoulda-matchers
 # Factory Girl
 
 https://github.com/thoughtbot/factory_girl_rails
+
+
+#Sabisu gem
+
+Sabisu is a powerful postman-like engine client to explore your Rails application api. It’s still under heavy development, but it is quite impressive and beautiful. – Abraham Kuri
+
+This tool was developed with the intention to reduce the learning curve when integrating new teammates to the project, or simply because is will just run on any browser and offers, almost the same support as postman.
+
+It uses well supported dependencies such as:
+
+Compass
+Furatto
+Simple Form
+Font Awesome
+Even better you can customise to never add the attributes for creating a new record, believe me, I have worked with models with up to 20 attributes and I’ve had to add them manually, it really takes a lot of time.
+
+You will know what I mean as we move forward with the gem integration.
