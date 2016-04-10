@@ -60,6 +60,8 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/v/3-0/docs
   config.infer_spec_type_from_file_location!
 
+  config.include Request::JsonHelpers, :type => :controller
+
   # Necessary to user method respond_with
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|
