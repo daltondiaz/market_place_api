@@ -51,7 +51,7 @@ RSpec.configure do |config|
   #
   # You can disable this behaviour by removing the line below, and instead
   # explictly tag your specs with their type, e.g.:
-  #
+  # => 
   #     describe UsersController, :type => :controller do
   #       # ...
   #     end
@@ -61,6 +61,11 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
 
   config.include Request::JsonHelpers, :type => :controller
+  config.include Request::HeadersHelpers, :type => :controller
+
+  config.before(:each, type: :controller) do
+    include_default_accept_headers
+  end
 
   # Necessary to user method respond_with
   Shoulda::Matchers.configure do |config|
